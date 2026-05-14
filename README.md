@@ -1,73 +1,68 @@
 # AI-SEO-Backlink-Ops
 
-> **⚠️ Showcase Repository** — Core execution records and sensitive platform data not included. This demonstrates the operational framework and strategy.
+> ⚠️ Showcase Only — Core implementation not included.
 
-A structured SEO backlink acquisition operation for an AI SaaS product. Covers directory submissions, Product Hunt launch, GitHub community outreach, and vendor cross-linking — with full tracking dashboards.
-
----
-
-## What This Is
-
-A complete SEO backlink ops framework I executed as an intern, targeting improved Google / Bing search rankings for an AI API gateway product. The operation resulted in **30+ high-quality backlinks** across directories, review platforms, and developer communities.
+An operations playbook documenting a structured backlink acquisition campaign for an AI SaaS product. This repository captures the research, submission workflows, tracking tables, and results from a link-building engagement executed during an internship.
 
 ---
 
-## Operation Structure
+## Background
 
-```
-AI-SEO-Backlink-Ops/
-├── execution_plan.md          # Full playbook (prep → directories → communities → vendors)
-├── 一、外链网站追踪.md          # Directory submission tracking (30+ platforms)
-├── 二、GitHub外链建设.md        # GitHub community outreach strategy
-├── 三、厂商互链.md              # Vendor cross-linking strategy
-├── Submissions_backlink/      # Per-platform submission records
-│   ├── producthunt/
-│   ├── startup-buffer/
-│   ├── toolify/
-│   └── ... (30+ platforms)
-├── Submissions_github/        # GitHub PR / issue outreach records
-│   ├── 方法1-PR操作手册.md
-│   └── 方法2-PR操作手册.md
-└── assets/                    # Product materials (logo, screenshots, copy)
-```
-
-## Strategy Overview
-
-### Phase 1: Directory Submissions (Days 1–4)
-Submit to 30+ AI tool directories and SaaS listing platforms:
-
-| Tier | Platforms | Goal |
-|------|-----------|------|
-| Free | Startup Buffer, AlternativeTo, Crunchbase, G2, Capterra | Baseline presence |
-| Paid ($10–$30) | ToolFame, Fazier, Turbo0, IndieHub, NewTool.site, Toolio.ai | Mid-tier directories |
-| Premium ($49–$99) | There's An AI For That, Toolify.ai, SaaSHub, Aixploria | High-DA backlinks |
-
-### Phase 2: GitHub Community (Days 5–7)
-- PR contributions to curated "awesome-*" lists
-- Issue submissions to relevant open-source projects
-- Repository README link exchanges
-
-### Phase 3: Vendor Cross-Linking (Ongoing)
-- Reciprocal linking with complementary AI tool vendors
-- Integration page listings on partner sites
+Organic backlinks are a primary signal for domain authority and search ranking. This project systematized acquisition across three channels: directory submissions, GitHub community contributions, and vendor cross-linking. The goal was to build a repeatable, low-cost backlink pipeline appropriate for an early-stage AI product.
 
 ## Results
 
 | Metric | Value |
-|--------|-------|
-| Platforms submitted | 30+ |
-| High-quality backlinks secured | 30+ |
-| Domain Authority range | DA 20–90 |
-| Cost | ~$500 paid placements |
+|---|---|
+| Total backlinks acquired | 30+ |
+| Paid spend ceiling (per listing) | $99 |
+| Campaign duration | ~1 internship sprint |
 
-## Tech Stack
+Platforms that accepted listings include:
 
-| Tool | Use |
-|------|-----|
-| Markdown | Documentation and tracking |
-| Google Sheets | Submission status tracking |
-| Browser automation | Form-filling for bulk submissions |
+**AI / SaaS directories**
+There's An AI For That · Toolify · SaaSHub · AlternativeTo · G2 · Capterra · Futurepedia · TopAI.tools · AI Tools Directory
 
----
+**General software directories**
+Product Hunt · BetaList · Slant · SourceForge · GetApp
 
-*Internship project · AI SaaS backlink strategy*
+## Playbook Structure
+
+```
+playbooks/
+├── 01-directory-submissions.md   # Free & paid tier tracker
+├── 02-product-hunt-launch.md     # Launch day checklist & timeline
+├── 03-github-outreach.md         # awesome-* PR strategy
+├── 04-vendor-cross-linking.md    # Partner link swap approach
+└── 05-tracking-master.md         # Consolidated status table
+```
+
+## Channels
+
+### Directory Submissions
+Submissions were triaged into three tiers:
+
+| Tier | Cost | Target DA | Notes |
+|---|---|---|---|
+| Free | $0 | Any | Volume play; submit everywhere |
+| Starter paid | $9–$29 | 40+ | Featured listing or do-follow link |
+| Premium paid | $49–$99 | 60+ | Selective; ROI-gated |
+
+### Product Hunt Launch
+Coordinated launch including hunter outreach, scheduling, upvote mobilization, and post-launch follow-up. The listing itself generates backlinks from PH profile pages and third-party roundups that embed PH data.
+
+### GitHub Awesome-List PRs
+Identified `awesome-*` repositories relevant to the product category. Submitted pull requests with concise, well-formatted entries. Acceptance rate: roughly 40% — merged PRs yield high-DA, do-follow backlinks from GitHub.com.
+
+### Vendor Cross-Linking
+Mapped integration partners and vendors whose documentation or blog already mentioned similar tools. Reached out to propose mutual mentions or "built with" acknowledgements.
+
+## Methodology Notes
+
+- All submissions used a canonical product description and consistent UTM-tagged URL.
+- Backlink status was verified monthly using free-tier ahrefs / Moz checks.
+- Paid listings were approved only when the referring domain authority exceeded the cost threshold.
+
+## Status
+
+This is an ops-documentation repository. It contains no application code. The playbooks and tracking tables represent a real campaign and are shared as a reference for similar early-stage growth initiatives.
